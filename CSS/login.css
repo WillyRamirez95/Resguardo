@@ -1,0 +1,118 @@
+*{
+    padding: 0px;
+    margin:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.formulario{
+    width: 350px;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.titulo h1{
+    color: white;
+    padding: 20px;
+}
+
+
+.contenedor{
+    width: 300px;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+    
+    padding-bottom: 5px;
+}
+
+label{
+    text-align: left;
+    color:black;
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+}
+.textbox{
+    box-sizing: border-box;
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    padding: 8px;
+    /* margin:5px; */
+    /* margin-top: 10px; */
+}
+
+.bt-ingresar{
+    padding: 10px;
+    margin: 10px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.bt-registrarse{
+    padding: 10px;
+    margin: 10px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.Message{
+ background-color: rgb(185, 30, 30);    
+ color: white;
+padding: 10px;
+font-size: 14px;
+/* border-radius:   0px 0px 10px 10px   ; */
+/* border-radius:  10px 10px 0px 0px    ; */
+width: 90%;
+margin: auto;
+margin-top: 5px;
+}
+
+
+.registrarse, .iniciarsesion{
+    /* display: block; */
+    padding: 10px;
+    /* align-content: flex-end; */
+}
+.registrarse a, .iniciarsesion a{
+    /* float: right; */
+    text-decoration: none;
+    font-size: 14px;
+    /* padding: 10px; */
+    color: blue;
+}
+
+.resultado{
+    padding: 5px;
+    background-color: darkred;
+    color: white;
+    font-size: 11px;
+}
+
+.resultado-conforme{
+    padding: 5px;
+    background-color: green;
+    color: white;
+    font-size: 11px;
+}
+
+.errorclave{
+    display: none;
+}

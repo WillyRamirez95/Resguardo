@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Vistas/Formulario-cliente.css">
+
+    <title>Formato de Registro de Cliente</title>
+    <script src="../JS/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="../JS/Formulario-funciones.js" type="text/javascript"></script>
+    <script src="../JS/Formualrio-mostrar.js" type="text/javascript"></script>
+</head>
+
+<body id="body">
+
+
+    <div id="content">
+        <div class="header">
+            <div class="icon">
+                <a href=""><img src="../img/Imagen1.jpg" alt="icono"></a>
+            </div>
+
+            <div class="title">
+                <h2> CREACIÓN DE CLIENTE - FILEWEB v3.0 Y RSSQL</h2>
+            </div>
+        </div>
+
+        <div class="content-table">
+            <!--  -->
+            <!-- INFO GENERAL -->
+            <!--  -->
+            <div class="contenttable1">
+                <span id="info123"> 1. INFORMACIÓN GENEREAL</span>
+                <div class="fechaformato" style="float: right"></div>
+                <hr>
+                <br>
+                <table class="table-info">
+                    <tr>
+                        <th>Nombre del cliente: <span class="importante">*</span> </th>
+                        <td><input class="input-text" type="text" name="Cliente" id="cliente"></td>
+                    </tr>
+                    <tr>
+                        <th>Razon social:<span class="importante">*</span></th>
+                        <td><input class="input-text" type="text" name="RS" id="rs">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>RUC:<span class="importante">*</span></th>
+                        <td>
+                            <input class="input-text" type="text" id="RUC" onkeypress="valideKey(event)"
+                                name="RUC">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Horario de atención:<span class="importante">*</span></th>
+                        <td style="font-size: 11px">
+                            <!-- <input class="input-text" type="text" name="Horario" id="
+                                horariosa" placeholder="Primer turno (08:00-12:00) - Segundo turno (13:00-17:00)"> -->
+                            <span style="font-size: 11px">Turno mañana:</span>
+                            <br>
+                            Hora inicio: <input type="time" class="horario"> | Hora fin:
+                            <input type="time" class="horario">
+                            <br><br>
+                            <hr>
+                            <span style="font-size: 11px">Turno tarde:</span>
+                            <br>
+                            Hora inicio: <input type="time" class="horario"> | Hora fin:
+                            <input type="time" class="horario">
+                            <br><br>
+                        </td>
+                        <!-- <td>
+                            <img src="/img/Consulta.png" alt="Sugerencia!" class="sugerencia-img" ondrag="
+                                viewSug()">
+                        <span class="sugerencia-span">Deberá ingresar el horario que tiene el cliente para que puedan recepcionar las solicitudes generadas, 
+                            ejemplo: PRIMER TURNO (08:00-12:00) - SEGUNDO TURNO (13:00-17:00)</span>
+                        </td> -->
+                    </tr>
+                    <tr>
+                        <th>Dirección principal:<span class="importante">*</span></th>
+                        <td><input class="input-text" type="text" name="Dirección"
+                                placeholder="Av-Ca-jr / Nro, Distrito - Provincia" id="dir"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- <br> -->
+
+            <!--  -->
+            <!-- TIPOS DE SOLICITUDES Y SERVICIOS POR CLIENTE -->
+            <!--  -->
+            <div class="contenttable1">
+                <span id="info2"> 2. TIPO DE SOLICITUDES Y SERVICIO:<span class="importante">*</span> </span>
+                <hr>
+                <br>
+                <div class="contenedorinterno">
+                    <table class="table-service">
+                        <tr>
+                            <th class="f1">SE1</th>
+                            <th class="f1">Solicitud de materiales:</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE1" onclick="QuitarTodosSE1()">
+                            </th>
+                            <td>Diferido</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE1" onclick="QuitarTodosSE1()">
+                            </th>
+                            <td>Día siguiente</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE1" onclick="QuitarTodosSE1()">
+                            </th>
+                            <td>Turno siguiente</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE1" onclick="QuitarTodosSE1()">
+                            </th>
+                            <td>Caja 1.2</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE1" onclick="QuitarTodosSE1()">
+                            </th>
+                            <td>Caja 1.6</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE1" onclick="QuitarTodosSE1()">
+                            </th>
+                            <td>Precintos</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE1" onclick="QuitarTodosSE1()">
+                            </th>
+                            <td>Cintillos</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" id="SE1" onclick="TodosSE1()">
+                            </th>
+                            <td>Todos</td>
+                        </tr>
+                    </table>
+
+
+
+
+                    <!-- Servicio de envío fisico SE2 -->
+                    <table class="table-service">
+                        <tr>
+                            <th class="f1">SE2</th>
+                            <th class="f1">Solicitud de envío físico (File y caja):</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE2" onclick="QuitarTodosSE2()">
+                            </th>
+                            <td>Delivery Rush 2</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE2" onclick="QuitarTodosSE2()">
+                            </th>
+                            <td>Delivery Rush 3</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE2" onclick="QuitarTodosSE2()">
+                            </th>
+                            <td>Delivery Rush 4</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE2" onclick="QuitarTodosSE2()">
+                            </th>
+                            <td>Diferido</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE2" onclick="QuitarTodosSE2()">
+                            </th>
+                            <td>Día siguiente</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE2" onclick="QuitarTodosSE2()">
+                            </th>
+                            <td>Turno siguiente</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE2" onclick="QuitarTodosSE2()">
+                            </th>
+                            <td>File</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE2" onclick="QuitarTodosSE2()">
+                            </th>
+                            <td>Caja</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE2" onclick="QuitarTodosSE2()">
+                            </th>
+                            <td>Salida permanente</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" id="SE2" onclick="TodosSE2()">
+                            </th>
+                            <td>Todos</td>
+                        </tr>
+                    </table>
+
+                    <!-- Servicio de envío fisico SE3 -->
+                    <table class="table-service">
+                        <tr>
+                            <th class="f1">SE3</th>
+                            <th class="f1">Solicitud de imágenes:</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE3" onclick="QuitarTodosSE3()">
+                            </th>
+                            <td>Delivery Rush 1.5</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE3" onclick="QuitarTodosSE3()">
+                            </th>
+                            <td>Delivery Rush 2</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE3" onclick="QuitarTodosSE3()">
+                            </th>
+                            <td>Delivery 3</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE3" onclick="QuitarTodosSE3()">
+                            </th>
+                            <td>Delivery Rush 4</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE3" onclick="QuitarTodosSE3()">
+                            </th>
+                            <td>Turno siguiente</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE3" onclick="QuitarTodosSE3()">
+                            </th>
+                            <td>File</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE3" onclick="QuitarTodosSE3()">
+                            </th>
+                            <td>Caja</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" id="SE3" onclick="TodosSE3()">
+                            </th>
+                            <td>Todos</td>
+                        </tr>
+                    </table>
+
+                    <!-- Servicio de envío fisico SR1 -->
+                    <table class="table-service">
+                        <tr>
+                            <th class="f1">SR1</th>
+                            <th class="f1">Solicitud de recojo de cajas nuevas:</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR1" onclick="QuitarTodosSR1()">
+                            </th>
+                            <td>Diferido</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR1" onclick="QuitarTodosSR1()">
+                            </th>
+                            <td>Día sigueinte</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR1" onclick="QuitarTodosSR1()">
+                            </th>
+                            <td>Turno siguiente</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR1" onclick="QuitarTodosSR1()">
+                            </th>
+                            <td>Resguardo</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR1" onclick="QuitarTodosSR1()">
+                            </th>
+                            <td>Inventario</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR1" onclick="QuitarTodosSR1()">
+                            </th>
+                            <td>Verificación</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" id="SR1" onclick="TodosSR1()">
+                            </th>
+                            <td>Todos</td>
+                        </tr>
+                    </table>
+                    <!-- Servicio de envío fisico SR1 -->
+                    <table class="table-service">
+                        <tr>
+                            <th class="f1">SR2</th>
+                            <th class="f1">Solicitud de recojo por devolución:</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR2" onclick="QuitarTodosSR2()">
+                            </th>
+                            <td>Diferido</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR2" onclick="QuitarTodosSR2()">
+                            </th>
+                            <td>Día sigueinte</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR2" onclick="QuitarTodosSR2()">
+                            </th>
+                            <td>Turno siguiente</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR2" onclick="QuitarTodosSR2()">
+                            </th>
+                            <td>Caja</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR2" onclick="QuitarTodosSR2()">
+                            </th>
+                            <td>Files</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" id="SR2" onclick="TodosSR2()">
+                            </th>
+                            <td>Todos</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- <br>    -->
+
+            <div class="contenttable1">
+                <span id="info3"> 3. TURNOS PARA SOLICITUD:</span>
+                <hr>
+                <br>
+                <table class="table-turnos">
+                    <tr>
+                        <th></th>
+                        <th>Hora inicio</th>
+                        <th>Hora Fin</th>
+                    </tr>
+                    <tr>
+                        <td>Lunes - Viernes:</td>
+                        <td><input class="fechas" type="time" value="00:00" readonly="readonly"></td>
+                        <td><input class="fechas" type="time" value="12:00"></td>
+                        <td><span style="font-size:12px;font-weight:normal;color: grey;">Primer turno</span></td>
+                    </tr>
+                    <tr>
+                        <td>Lunes - Viernes:</td>
+                        <td><input class="fechas" type="time" value="12:01"></td> 
+                        <td><input class="fechas" type="time" value="17:00"></td> 
+                        <td><span style="font-size:12px;font-weight:normal;color: grey;">Segundo turno</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- TABLA DE CUENTAS Y SUBECUENTAS (FUNCION AGREGAR TD-INPUT) -->
+            <div class="contenttable1">
+                <span id="info4"> 4. CREACIÓN DE CUENTAS Y SUBCUENTAS:</span>
+                <hr>
+
+                <br>
+                <table class="tabla-cuenta-subcuenta" id="tabla-c">
+                    <tr>
+                        <th>CUENTA (área):</th>
+                        <th>SUBCUENTA (sub-área):</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="cnt-sbc"></td>
+                        <td><input type="text" class="cnt-sbc"></td>
+                        <td><input type="button" value="X" class="bt-eliminar"></td>
+                    </tr>
+                    <!-- onclick="$(this).parent().parent().remove()" -->
+
+                </table>
+                <button id="agregar" onclick="agregar()">Agregar</button>
+                <!-- <br> -->
+
+                <!-- <button type="button" id="agregar" onclick="agregar()"> + </button> -->
+            </div>
+            <script src="../JS/Formulario-Eliminar.js" type="text/javascript"></script>
+
+        </div>
+
+        <br>
+
+        <hr><br>
+        <div class="contenedor-usuario">
+
+
+            <div class="usuario">
+                <span>Responsable:</span>
+                <input type="text" id="usuario">
+            </div>
+            <div class="contenedor-firma">
+                <img src="#" alt="" id="firma-img" name="firma-img">
+                <input type="file" name="firma" id="buscar-firma" accept="image/*" onchange="buscar()">
+                <!-- <input type="submit" name="cargar" id="cargar-firma" > -->
+            </div>
+
+
+        </div>
+        <button id="guardar" onclick="ObtenerDatos()">Imprimir</button>
+        <!-- <a href="../Programacion/Plugins/GenerarPDF">generar pdf</a> -->
+        <br>
+        <br>
+    </div>
+    <!-- <script src="../JQuery/deltetr.js"></script> -->
+
+</body>
+
+</html>

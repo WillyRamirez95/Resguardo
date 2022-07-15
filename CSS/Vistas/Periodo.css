@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-weight:400;
+}
+.contenedor {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 10px;
+}
+
+.izquierda {
+  width: 30%;
+  min-width: 200px;
+}
+
+.izquierda .formulario {
+  margin: 3px auto;
+  /* margin: auto; */
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  background-color: rgb(236, 229, 229);
+  border-radius: 5px;
+}
+
+.formulario .filas {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.formulario .flexible {
+  width: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.formulario .flexible input {
+  display: flex;
+  padding: 2px;
+  align-items: center;
+}
+
+.formulario label {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+
+.formulario input {
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+.formulario .number {
+  box-sizing: border-box;
+  width: 48%;
+  display: inline-flex;
+  margin: auto;
+}
+
+input:focus {
+  border-color: blue;
+  outline: 0 none;
+}
+
+select{
+  display: block;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px;
+}
+
+button {
+  display: block;
+  margin: auto;
+  width: 200px;
+  border: none;
+  background-color: dodgerblue;
+  color: white;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.izquierda .level {
+  height: auto;
+  border-radius: 5px;
+  margin: 5px;
+  height: 40vh;
+  overflow-x:scroll;
+}
+
+.tabla {
+  border: 1px solid lightgrey;
+  width: 100%;
+  font-size: 13px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.overflow{
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+.tabla thead {
+  background-color: dodgerblue;
+  color: white;
+  height: 30px;
+}
+#tablapendientes thead{
+  background-color: lightcoral;
+}
+
+.tabla thead tr th {
+  font-weight: 400;
+}
+
+.tabla tbody tr td {
+  font-size: 11px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.tabla > tbody > tr:nth-child(odd) > td,
+.tabla > tbody > tr:nth-child(odd) > th {
+  background-color: #ffffff;
+}
+.tabla > tbody > tr:nth-child(even) > td,
+.tabla > tbody > tr:nth-child(even) > th {
+  background-color: #f3f3f3;
+}
+
+.tabla tbody tr:hover> td{
+  background-color: black;
+  color: white;
+  transition: .3s;
+}
+
+.derecha {
+  width: 70%;
+  min-height: 400px;
+}
+
+.titulo{
+    background-color: lightskyblue;
+    border-radius: 5px;
+    padding: 5px;    
+    margin:5px 0px 5px 0px;
+    text-align: center;
+
+}
+
+.pendientes{
+    background-color: lightcoral;
+    color: black;
+}
+
+.titulo h4 {
+    font-weight: 500;
+}
+
+
+.respuesta{
+  width: 98%;
+  display: block;
+  margin: auto;
+  padding: 5px;
+  margin-bottom: 2px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.Error{
+  background-color: red;
+  color: white;
+}
+
+.Correcto{
+  background-color: lightgreen;
+  color: darkolivegreen;
+}

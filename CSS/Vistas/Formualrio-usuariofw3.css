@@ -1,0 +1,407 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-size: 12px;
+}
+
+#content {
+  width: 900px;
+  height: 100%auto;
+  margin: 0 auto;
+}
+
+#content button {
+  border: none;
+}
+
+#content .header {
+  width: 100%;
+  height: 90px;
+  background-color: rgb(183, 0, 0);
+}
+
+.icon {
+  float: left;
+  left: 10px;
+  position: relative;
+  margin-top: 9px;
+}
+
+.title {
+  position: relative;
+  right: 160px;
+  float: right;
+  margin-top: 30px;
+  color: white;
+}
+
+.title h2 {
+  font-size: 23px;
+}
+
+/*  
+*
+*CSS MULTIUSUARIOS
+*
+*/
+
+#contenedor-multiusuario {
+  display: none;
+}
+
+#multiusuario {
+  width: 100%;
+  margin: auto;
+  /* background-color: rgb(183, 0, 0); */
+  color: white;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+#multiusuario tr th {
+  height: 30px;
+  background-color: rgb(183, 0, 0);
+}
+
+.title-multiusuario-usuario,
+.title-multiusuario-correo {
+  width: 37%;
+}
+
+.fila-multiusuario input {
+  text-align: center;
+  padding: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  /* margin: 4px; */
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+.fila-multiusuario .tuser {
+  padding: 3px;
+}
+
+#agregar-fila-multiusuario {
+  text-align: right;
+}
+
+#agregar-fila-multiusuario button {
+  width: 80px;
+  background-color: rgb(183, 0, 0);
+  color: white;
+  padding: 4px;
+  margin: 2px;
+  border-radius: 5px;
+  /* margin-right: px; */
+}
+
+#agregar-fila-multiusuario button:hover {
+  box-shadow: 1px 1px 3px 2px rgb(108, 8, 8);
+  transition: 0.4s;
+}
+
+/* Formateo al formulario*/
+
+tr,
+th {
+  font-size: 12px;
+}
+
+.contenttable1 {
+  position: static;
+  /* border: 1px solid black; */
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.contenttable1 span {
+  /* float: left; */
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.table-info,
+.table-info th,
+.table-info td {
+  font-size: 12px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.table-info tr th {
+  width: 160px;
+}
+
+.table-info .input-text {
+  width: 350px;
+  font-size: 12px;
+}
+
+/* SUGERENCIA FLOTANTE */
+
+#cont-sugerencia {
+  width: 350px;
+  height: auto;
+  display: none;
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgb(183, 0, 0);
+  box-shadow: 1px 1px 10px 4px rgb(193, 7, 7);
+  top: 120px;
+}
+
+#cont-sugerencia p {
+  padding: 10px;
+  color: white;
+}
+
+#cont-sugerencia p b {
+  padding: 2px;
+  background-color: white;
+  color: rgb(183, 0, 0);
+  border-radius: 5px;
+}
+
+#sugere {
+  width: 18px;
+  height: 18px;
+}
+
+#sugere:hover ~ #cont-sugerencia {
+  display: block;
+  transition: 0.7s;
+}
+
+/* ACTIVAR MIEMBRO POLY */
+
+#miembro-poly {
+  display: none;
+}
+#TRPerfil{
+  visibility: hidden;
+}
+
+/* ************************************************** */
+
+/* CONTENEDOR DE SOLICITUDES Y SERVICIOS */
+
+.contenedorinterno {
+  height: 240px;
+}
+
+.contenedorinterno .table-service {
+  float: left;
+  margin-left: 10px;
+  /* margin: 0 auto */
+}
+
+.table-service {
+  border: 1px solid black;
+}
+
+.table-service,
+.table-service th,
+.table-service td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  /* border-spacing: 0px; */
+}
+
+.table-service,
+.table-service th {
+  align-items: center;
+  width: 30px;
+}
+
+.table-service .f1 {
+  background-color: rgb(183, 0, 0);
+  color: white;
+}
+
+.table-service,
+.table-service td {
+  align-items: center;
+  width: 150px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table-service th input {
+  margin-top: 3px;
+}
+
+/* *******************************************/
+
+/* Tabla turnos */
+
+.contenttable1 .table-turnos {
+  width: 320px;
+  margin-left: 10px;
+  /* background-color: black; */
+}
+
+.fechas {
+  margin-left: 15px;
+}
+
+/* *******************************************/
+
+/* Tabla cuenta subcuenta */
+
+#cuentaysubcuenta {
+  height: 20px;
+  transition: ease all 0.5s;
+}
+
+.tabla-cuenta-subcuenta {
+  width: 600px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  /* border: 1px solid black; */
+  display: none;
+}
+
+.tabla-cuenta-subcuenta th {
+  background-color: rgb(183, 0, 0);
+  color: white;
+  height: 25px;
+}
+
+.tabla-cuenta-subcuenta tr td input {
+  width: 300px;
+  height: 20px;
+  border: 1px solid grey;
+}
+
+#multiusuario .bt-eliminar,
+.tabla-cuenta-subcuenta .bt-eliminar {
+  width: 20px;
+  height: auto;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  margin-left: 2px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(46, 42, 42);
+}
+#tabla-c,
+#agregar {
+  display: none;
+}
+
+.contenttable1 #agregar {
+  float: right;
+  width: 80px;
+  height: 30px;
+  background-color: rgb(183, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contenttable1 #agregar:hover {
+  box-shadow: 1px 1px 4px 2px rgb(108, 8, 8);
+  color: white;
+  /* border: 2px solid rgb(108,13,9); */
+  transition: 0.6s;
+}
+
+/* CONTENEDOR RESPONSABLE */
+
+.contenedor-responsable {
+  font-size: 12px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  /* border: 1px solid black; */
+}
+
+.contenedor-responsable .usuario {
+  width: 60%;
+  height: 80px;
+  font-weight: bold;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  display: flex;
+}
+
+.usuario span {
+  margin: auto;
+}
+
+.contenedor-responsable .usuario input {
+  border: none;
+  display: flex;
+  width: 400px;
+  margin: auto;
+  border-bottom: 1px solid black;
+}
+
+.contenedor-firma {
+  width: 40%;
+  height: 80px;
+  /* border: 1px solid black; */
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  /* position: relative; */
+  display: flex;
+}
+
+#firma-img {
+  width: 230px;
+  height: 80px;
+  display: none;
+  margin: auto;
+  /* position: absolute; */
+}
+
+#buscar-firma {
+  /* height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex; */
+  margin: auto;
+}
+
+#guardar {
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  background-color: rgb(183, 0, 0);
+  color: white;
+  border-radius: 5px;
+  align-items: center;
+  /* vertical-align: middle   ; */
+}
+
+#guardar:hover {
+  /* background-color: rgb(108, 8, 8); */
+  box-shadow: 1px 1px 6px 2px rgb(108, 8, 8);
+  transition: 0.4s;
+}
+
+@media print {
+  #sugere,
+  #guardar,
+  #buscar-firma,
+  #select-multiusuario {
+    display: none;
+  }
+  #btagregar-multiusuario,
+  #agregar,
+  .bt-eliminar {
+    display: none;
+  }
+}

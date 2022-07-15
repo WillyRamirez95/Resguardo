@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Vistas/Formualrio-usuariofw3.css">
+
+    <title>Registro de Usuario FileWeb3</title>
+    <script src="../JS/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="../JS/Formulario-funciones.js" type="text/javascript"></script>
+    <script src="../JS/Formualrio-mostrar.js" type="text/javascript"></script>
+
+</head>
+
+<body id="body">
+
+
+    <div id="content">
+        <div class="header">
+            <div class="icon">
+                <a href=""><img src="../img/Imagen1.jpg" alt="icono"></a>
+            </div>
+
+            <div class="title">
+                <h2>CREACIÓN DE USUARIO - FILEWEB v3.0</h2>
+            </div>
+        </div>
+
+        <div class="content-table">
+            <!--  -->
+            <!-- INFO GENERAL -->
+            <!--  -->
+            <div class="contenttable1">
+                <span id="info123"> 1. INFORMACIÓN GENEREAL</span> <span style="float: right"
+                    id="select-multiusuario">Multiusuario: <input type="radio" name="multiusuario" value="Si"
+                        onclick="multiusuario()">Si <input type="radio" name="multiusuario" value="No" id="" checked
+                        onclick="multiusuario()">No</span>
+                <hr>
+                <br>
+
+                <table class="table-info" id="Informacion_General">
+                    <th>Cliente:</th>
+                    <td>
+                        <input type="text" style="width: 353px">
+                        <!-- <select name="cliente" style="width: 353px">
+                            <option label="[Seleccionar]"></option>
+                            <option label="[Todos]"></option>
+                            <option label="120101 - MIBANCO"></option>
+                            <option label="120102 - BANCO PICHINCHA"></option>
+                            <option label="120103 - AFP PROFUTURO"></option>
+                            <option label="120104 - INDECOPI"></option>
+                            <option label="120105 - AGROBANCO"></option>
+                            <option label="120106 - ENEL"></option>
+                            <option label="120107 - INTERBANK"></option>
+                            <option label="120108 - AFP INTEGRA"></option>
+                            <option label="120109 - BANBIF"></option>
+                            <option label="120110 - OSITRAN"></option>
+                            <option label="120111 - MIN. DE ENERGIA Y MINAS"></option>
+                            <option label="120112 - SEDAPAL"></option>
+                            <option label="120113 - ODEBRECHT"></option>
+                            <option label="120114 - FINANCIERA CONFIANZA"></option>
+                            <option label="120116 - AFP HABITAT"></option>
+                            <option label="120117 - BBVA CONTINENTAL"></option>
+                            <option label="120118 - LUZ DEL SUR"></option>
+                            <option label="120119 - CAMPO FE"></option>
+                            <option label="120120 - AVON"></option>
+                            <option label="120121 - PROINVERSION"></option>
+                            <option label="120122 - UPC"></option>
+                            <option label="120123 - COLP"></option>
+                            <option label="120123 - HOCP"></option>
+                            <option label="120123 - HOEP"></option>
+                            <option label="120123 - PERU LNG"></option>
+                            <option label="120124 - CLINICA INTERNACIONAL"></option>
+                            <option label="120125 - CRECER SEGUROS"></option>
+                            <option label="120126 - CONTUGAS"></option>
+                            <option label="120127 - MINERA CHINALCO PERU SA"></option>
+                            <option label="120128 - SBS"></option>
+                            <option label="120129 - AVIANCA PERU S.A."></option>
+                            <option label="120130 - BESCO S.A.C."></option>
+                            <option label="120131 - PROTECTA"></option>
+                            <option label="120132 - STAR PERU"></option>
+                            <option label="120133 - MNRA BARRICK MISQUICHILCA"></option>
+                            <option label="120134 - BANCO DE COMERCIO"></option>
+                            <option label="120135 - DINERS CLUB PERU"></option>
+                            <option label="120136 - SUNARP"></option>
+                            <option label="120137 - GLOBAL SALES SOLUTIONS"></option>
+                            <option label="120138 - EULEN DEL PERU"></option>
+                            <option label="120139 - PENSION 65"></option>
+                            <option label="120140 - APCI"></option>
+                            <option label="120141 - CARSA"></option>
+                            <option label="120142 - VOLVO"></option>
+                            <option label="120143 - EDPYME RAIZ"></option>
+                            <option label="120144 - AMECO PERU S.R.L."></option>
+                            <option label="120145 - DIVERSEY PERU S.A.C."></option>
+                            <option label="120146 - SURA FONDOS"></option>
+                            <option label="120147 - ABB POWER GRIDS S.A"></option>
+                            <option label="120147 - ABB S.A."></option>
+                            <option label="120148 - PROMPERU"></option>
+                            <option label="120149 - BANCO DE CREDITO DEL PERU"></option>
+                            <option label="120150 - MINIST DE ECONOMIA Y FINAZ"></option>
+                            <option label="120151 - ORG DE E Y FISC. AMBIENTAL"></option>
+                            <option label="120152 - CORPAC S.A."></option>
+                            <option label="120153 - NOVO NORDISK"></option>
+                            <option label="120154 - WORLD WILDLIFE FUND. INC."></option>
+                            <option label="120155 - ARIN S.A."></option>
+                            <option label="120156 - SAB SURA"></option>
+                            <option label="120157 - JC & INELMEC ASOCIADOS SAC"></option>
+                            <option label="120158 - NOTARIA CARPIO VELEZ"></option>
+                            <option label="120159 - ASOCIACION DE AFPS"></option>
+                            <option label="120160 - CIA. ERICSSON S.A."></option>
+                            <option label="120161 - ANDDES ASOCIADOS S.A.C."></option>
+                            <option label="120162 - ALTOZANO DESAR. Y CONSTR."></option>
+                            <option label="120163 - TELEFONICA DEL PERU S.A.A"></option>
+                            <option label="120165 - PRONABEC"></option>
+                            <option label="120166 - SERVIR"></option>
+                            <option label="120167 - MULTILAB"></option>
+                            <option label="120168 - ONP"></option>
+                            <option label="120169 - ENTEL"></option>
+                            <option label="120170 - COOP. SAN MIGUEL"></option>
+                            <option label="120171 - MINISTERIO DE DEFENSA"></option>
+                            <option label="120172 - OSCE"></option>
+                            <option label="120174 - CROSLAND"></option>
+                        </select> -->
+                    </td>
+                    <tr id="TRUsuario">
+                        <th>Nombre del usuario:</th>
+                        <td><input class="input-text" type="text" id="usuario"></td>
+                    </tr>
+                    <tr id="TRCorreo">
+                        <th>Correo:</th>
+                        <td><input class="input-text" type="text" id="correo">
+                        </td>
+                    </tr>
+                    <tr id="TRTelefono">
+                        <th>Número de telef. o celular:</th>
+                        <td><input class="input-text" type="text" id="telefono" onkeypress="valideKey(event)"
+                                name=" RUC"></td>
+                    </tr>
+                    <tr class="tr-agrupado" id="TRTipoUsuario">
+                        <th>Tipo de usuario:</th>
+                        <td>
+                            <select name="tuser" id="tipousuario" style="width: 353px">
+                                <option label="[Seleccionar]"></option>
+                                <option label="Avanzado"></option>
+                                <option label="Básico"></option>
+                                <option label="Consulta"></option>
+                            </select>
+                            <img src="/img/descarga.png" alt="" id="sugere" />
+
+                            <div id="cont-sugerencia">
+                                <p><b>Usuario Avanzado:</b> <br> Consulta de documentos, generación de pedidos
+                                    (Materiales, préstamo de items, recojos), reportería y log de auditoria por usuario.
+                                </p>
+                                <br>
+                                <p><b>Usuario Básico:</b> <br> Acceso a consulta de documentos y generación de pedidos
+                                    (Materiales, préstamo de ítems y recojos).</p>
+                                <br>
+                                <p><b>Usuario Consulta:</b> <br> Acceso a consultas de documentos.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="TRMiembroPoly">
+                        <th>Miembro poly:
+                            <br>
+                            <input type="radio" name="miembropoly" id="miembro-poly-si" onclick="
+                                miembropoly_si()"> Si
+                            <input type="radio" name="miembropoly" id="miembro-poly-no" onclick="
+                                miembropoly_no()" checked> No
+                        </th>
+
+                        <td>
+
+                            <table id="miembro-poly">
+                                <!-- <tr>
+                                    <th style="color: white">1</th>
+                                    <th style="color: white">2</th>
+                                </tr> -->
+                                <tr>
+                                    <td><input type="checkbox" class="miembropoly">Lider polyfiles</td>
+                                    <td><input type="checkbox" class="miembropoly">Gestor</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="miembropoly">Lider de servicios</td>
+                                    <td><input type="checkbox" class="miembropoly">Reasignador</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="miembropoly">Administrador Oneil</td>
+                                    <td><input type="checkbox" class="miembropoly">Operador de almacén</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="miembropoly">Asistente administrativo</td>
+                                    <td><input type="checkbox" class="miembropoly">Coordinador de despacho</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="miembropoly">Encargado de mensajería</td>
+                                    <td><input type="checkbox" class="miembropoly">Coordinador de almacén</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="miembropoly">Sectorista gestor</td>
+                                    <td><input type="checkbox" class="miembropoly">Coordinador de Inventario</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="TRDireccion">
+                        <th>Dirección:</th>
+                        <td><input type="text" class="input-text" placeholder="Dirección"></td>
+                    </tr>
+                    <tr class="tr-agrupado" id="TRPerfil">
+                        <th>Perfil:</th>
+                        <td>
+                            <select name="perfil" id="perfil" style="width: 353px">
+                                <!-- <option label=""></option> -->
+                                <option label="Administrador de portal"></option>
+                                <option label="Gestor IBK"></option>
+                                <option label="Reasignador"></option>
+                                <option label="Sectorista"></option>
+                                <option label="Usuario" selected></option>
+                                <option label="Usuario avanzado"></option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="TRCliente">
+
+                    </tr>
+                </table>
+                <br>
+                <div id="contenedor-multiusuario">
+                    <table style="margin: auto">
+                        <th>Cliente:</th>
+                        <td>
+                            <input type="text" style="width: 353px" placeholder="nombre del cliente">
+                            <!-- <select name="cliente" style="width: 353px">
+                                <option label="[Seleccionar]"></option>
+                                <option label="[Todos]"></option>
+                                <option label="120101 - MIBANCO"></option>
+                                <option label="120102 - BANCO PICHINCHA"></option>
+                                <option label="120103 - AFP PROFUTURO"></option>
+                                <option label="120104 - INDECOPI"></option>
+                                <option label="120105 - AGROBANCO"></option>
+                                <option label="120106 - ENEL"></option>
+                                <option label="120107 - INTERBANK"></option>
+                                <option label="120108 - AFP INTEGRA"></option>
+                                <option label="120109 - BANBIF"></option>
+                                <option label="120110 - OSITRAN"></option>
+                                <option label="120111 - MIN. DE ENERGIA Y MINAS"></option>
+                                <option label="120112 - SEDAPAL"></option>
+                                <option label="120113 - ODEBRECHT"></option>
+                                <option label="120114 - FINANCIERA CONFIANZA"></option>
+                                <option label="120116 - AFP HABITAT"></option>
+                                <option label="120117 - BBVA CONTINENTAL"></option>
+                                <option label="120118 - LUZ DEL SUR"></option>
+                                <option label="120119 - CAMPO FE"></option>
+                                <option label="120120 - AVON"></option>
+                                <option label="120121 - PROINVERSION"></option>
+                                <option label="120122 - UPC"></option>
+                                <option label="120123 - COLP"></option>
+                                <option label="120123 - HOCP"></option>
+                                <option label="120123 - HOEP"></option>
+                                <option label="120123 - PERU LNG"></option>
+                                <option label="120124 - CLINICA INTERNACIONAL"></option>
+                                <option label="120125 - CRECER SEGUROS"></option>
+                                <option label="120126 - CONTUGAS"></option>
+                                <option label="120127 - MINERA CHINALCO PERU SA"></option>
+                                <option label="120128 - SBS"></option>
+                                <option label="120129 - AVIANCA PERU S.A."></option>
+                                <option label="120130 - BESCO S.A.C."></option>
+                                <option label="120131 - PROTECTA"></option>
+                                <option label="120132 - STAR PERU"></option>
+                                <option label="120133 - MNRA BARRICK MISQUICHILCA"></option>
+                                <option label="120134 - BANCO DE COMERCIO"></option>
+                                <option label="120135 - DINERS CLUB PERU"></option>
+                                <option label="120136 - SUNARP"></option>
+                                <option label="120137 - GLOBAL SALES SOLUTIONS"></option>
+                                <option label="120138 - EULEN DEL PERU"></option>
+                                <option label="120139 - PENSION 65"></option>
+                                <option label="120140 - APCI"></option>
+                                <option label="120141 - CARSA"></option>
+                                <option label="120142 - VOLVO"></option>
+                                <option label="120143 - EDPYME RAIZ"></option>
+                                <option label="120144 - AMECO PERU S.R.L."></option>
+                                <option label="120145 - DIVERSEY PERU S.A.C."></option>
+                                <option label="120146 - SURA FONDOS"></option>
+                                <option label="120147 - ABB POWER GRIDS S.A"></option>
+                                <option label="120147 - ABB S.A."></option>
+                                <option label="120148 - PROMPERU"></option>
+                                <option label="120149 - BANCO DE CREDITO DEL PERU"></option>
+                                <option label="120150 - MINIST DE ECONOMIA Y FINAZ"></option>
+                                <option label="120151 - ORG DE E Y FISC. AMBIENTAL"></option>
+                                <option label="120152 - CORPAC S.A."></option>
+                                <option label="120153 - NOVO NORDISK"></option>
+                                <option label="120154 - WORLD WILDLIFE FUND. INC."></option>
+                                <option label="120155 - ARIN S.A."></option>
+                                <option label="120156 - SAB SURA"></option>
+                                <option label="120157 - JC & INELMEC ASOCIADOS SAC"></option>
+                                <option label="120158 - NOTARIA CARPIO VELEZ"></option>
+                                <option label="120159 - ASOCIACION DE AFPS"></option>
+                                <option label="120160 - CIA. ERICSSON S.A."></option>
+                                <option label="120161 - ANDDES ASOCIADOS S.A.C."></option>
+                                <option label="120162 - ALTOZANO DESAR. Y CONSTR."></option>
+                                <option label="120163 - TELEFONICA DEL PERU S.A.A"></option>
+                                <option label="120165 - PRONABEC"></option>
+                                <option label="120166 - SERVIR"></option>
+                                <option label="120167 - MULTILAB"></option>
+                                <option label="120168 - ONP"></option>
+                                <option label="120169 - ENTEL"></option>
+                                <option label="120170 - COOP. SAN MIGUEL"></option>
+                                <option label="120171 - MINISTERIO DE DEFENSA"></option>
+                                <option label="120172 - OSCE"></option>
+                                <option label="120174 - CROSLAND"></option>
+                            </select> -->
+                        </td>
+                    </table>
+                    <br>
+                    <table id="multiusuario">
+                        <tr>
+                            <th class="title-multiusuario-usuario">Usuario</th>
+                            <th class="title-multiusuario-correo">Correo</th>
+                            <th class="title-multiusuario-telefono">N° telefono</th>
+                            <th class="title-multiusuario-tipo">Tipo usuario</th>
+                            <!-- <th class="title-multiusuario">Miembro Poly</th> -->
+                        </tr>
+
+                        <tr>
+                            <td class="fila-multiusuario"><input type="text"></td>
+                            <td class="fila-multiusuario"><input type="text"></td>
+                            <td class="fila-multiusuario"><input type="text"></td>
+                            <td class="fila-multiusuario">
+                                <select name="tuser" class="tuser">
+                                    <option label="[Seleccionar]"></option>
+                                    <option label="Avanzado"></option>
+                                    <option label="Básico"></option>
+                                    <option label="Consulta"></option>
+                                </select>
+                            </td>
+                            <td class="fila-multiusuario"><input type="button" value="X" class="bt-eliminar"></td>
+                            <!-- <td><input type="text" placeholder="Member Poly"></td> -->
+                        </tr>
+                    </table>
+                    <div id="agregar-fila-multiusuario">
+                        <button onclick="agregarfila_multiusuario()" id="btagregar-multiusuario">Agregar</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- <br> -->
+
+            <!--  -->
+            <!-- TIPOS DE SOLICITUDES Y SERVICIOS POR CLIENTE -->
+            <!--  -->
+            <div class="contenttable1">
+                <span id="info2"> 2. TIPO DE SOLICITUDES Y SERVICIO:</span>
+                <hr>
+                <br>
+                <div class="contenedorinterno">
+                    <table class="table-service">
+                        <tr>
+                            <th class=" f1">SE1</th>
+                            <th class="f1">Solicitud de materiales:</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE1" onclick="QuitarTodosSE1()">
+                            </th>
+                            <td>Diferido</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE1" onclick="QuitarTodosSE1()">
+                            </th>
+                            <td>Día siguiente</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE1" onclick="QuitarTodosSE1()">
+                            </th>
+                            <td>Turno siguiente</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE1" onclick="QuitarTodosSE1()">
+                            </th>
+                            <td>Caja 1.2</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE1" onclick="QuitarTodosSE1()">
+                            </th>
+                            <td>Caja 1.6</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE1" onclick="QuitarTodosSE1()">
+                            </th>
+                            <td>Precintos</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE1" onclick="QuitarTodosSE1()">
+                            </th>
+                            <td>Cintillos</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" id="SE1" onclick="TodosSE1()">
+                            </th>
+                            <td>Todos</td>
+                        </tr>
+                    </table>
+
+
+
+
+                    <!-- Servicio de envío fisico SE2 -->
+                    <table class="table-service">
+                        <tr>
+                            <th class="f1">SE2</th>
+                            <th class="f1">Solicitud de envío físico (File y caja):</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE2" onclick="QuitarTodosSE2()">
+                            </th>
+                            <td>Delivery Rush 2</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE2" onclick="QuitarTodosSE2()">
+                            </th>
+                            <td>Delivery Rush 3</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE2" onclick="QuitarTodosSE2()">
+                            </th>
+                            <td>Delivery Rush 4</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE2" onclick="QuitarTodosSE2()">
+                            </th>
+                            <td>Diferido</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE2" onclick="QuitarTodosSE2()">
+                            </th>
+                            <td>Día siguiente</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE2" onclick="QuitarTodosSE2()">
+                            </th>
+                            <td>Turno siguiente</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE2" onclick="QuitarTodosSE2()">
+                            </th>
+                            <td>File</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE2" onclick="QuitarTodosSE2()">
+                            </th>
+                            <td>Caja</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE2" onclick="QuitarTodosSE2()">
+                            </th>
+                            <td>Salida permanente</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" id="SE2" onclick="TodosSE2()">
+                            </th>
+                            <td>Todos</td>
+                        </tr>
+                    </table>
+
+                    <!-- Servicio de envío fisico SE3 -->
+                    <table class="table-service">
+                        <tr>
+                            <th class="f1">SE3</th>
+                            <th class="f1">Solicitud de imágenes:</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE3" onclick="QuitarTodosSE3()">
+                            </th>
+                            <td>Delivery Rush 1.5</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE3" onclick="QuitarTodosSE3()">
+                            </th>
+                            <td>Delivery Rush 2</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE3" onclick="QuitarTodosSE3()">
+                            </th>
+                            <td>Delivery Rush 4</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE3" onclick="QuitarTodosSE3()">
+                            </th>
+                            <td>Turno siguiente</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE3" onclick="QuitarTodosSE3()">
+                            </th>
+                            <td>File</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SE3" onclick="QuitarTodosSE3()">
+                            </th>
+                            <td>Caja</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" id="SE3" onclick="TodosSE3()">
+                            </th>
+                            <td>Todos</td>
+                        </tr>
+                    </table>
+
+                    <!-- Servicio de envío fisico SR1 -->
+                    <table class="table-service">
+                        <tr>
+                            <th class="f1">SR1</th>
+                            <th class="f1">Solicitud de recojo de cajas nuevas:</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR1" onclick="QuitarTodosSR1()">
+                            </th>
+                            <td>Diferido</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR1" onclick="QuitarTodosSR1()">
+                            </th>
+                            <td>Día sigueinte</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR1" onclick="QuitarTodosSR1()">
+                            </th>
+                            <td>Turno siguiente</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR1" onclick="QuitarTodosSR1()">
+                            </th>
+                            <td>Resguardo</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR1" onclick="QuitarTodosSR1()">
+                            </th>
+                            <td>Inventario</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR1" onclick="QuitarTodosSR1()">
+                            </th>
+                            <td>Verificación</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" id="SR1" onclick="TodosSR1()">
+                            </th>
+                            <td>Todos</td>
+                        </tr>
+                    </table>
+                    <!-- Servicio de envío fisico SR1 -->
+                    <table class="table-service">
+                        <tr>
+                            <th class="f1">SR2</th>
+                            <th class="f1">Solicitud de recojo por devolución:</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR2" onclick="QuitarTodosSR2()">
+                            </th>
+                            <td>Diferido</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR2" onclick="QuitarTodosSR2()">
+                            </th>
+                            <td>Día sigueinte</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR2" onclick="QuitarTodosSR2()">
+                            </th>
+                            <td>Turno siguiente</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR2" onclick="QuitarTodosSR2()">
+                            </th>
+                            <td>Caja</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="SR2" onclick="QuitarTodosSR2()">
+                            </th>
+                            <td>Files</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" id="SR2" onclick="TodosSR2()">
+                            </th>
+                            <td>Todos</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+            <!-- TABLA DE CUENTAS Y SUBECUENTAS (FUNCION AGREGAR TD-INPUT) -->
+            <div class="contenttable1" id="cuentaysubcuenta">
+                <span id="info4"> 3. ASIGNACIÓN DE CUENTAS Y SUBCUENTAS:</span>
+                <span style="float: right" id="Asignar-cuentas">
+                    <input type="radio" id="cc-si" name="asignacion-cc" onclick="asignarcc_yes()">Si
+                    <input type="radio" id="cc-no" name="asignacion-cc" onclick="asignarcc_no()" checked>No
+                </span>
+                <hr>
+                <br>
+                <table class="tabla-cuenta-subcuenta" id="tabla-c">
+                    <tr>
+                        <th>CUENTA (área):</th>
+                        <th>SUBCUENTA (sub-área):</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="cnt-sbc"></td>
+                        <td><input type="text" class="cnt-sbc"></td>
+                        <td><input type="button" value="X" class="bt-eliminar"></td>
+                    </tr>
+                </table>
+                <br>
+
+                <button type="button" id="agregar" onclick="agregar()"> Agregar </button>
+            </div>
+        </div>
+        <script src="../JS/Formulario-Eliminar.js"></script>
+        <br><br>
+        <hr><br>
+        <div class="contenedor-responsable">
+
+
+            <div class="usuario">
+                <span>Responsable:</span>
+                <input type="text" id="responsable">
+            </div>
+            <div class="contenedor-firma">
+                <img src="#" alt="" id="firma-img">
+                <input type="file" name="firma" id="buscar-firma" accept="image/*" onchange="buscar()">
+                <!-- <input type="submit" name="cargar" id="cargar-firma" > -->
+            </div>
+
+
+
+        </div>
+        <button id="guardar" onclick="PrintFileweb()">Imprimir</button>
+        <!-- <hr> -->
+        <!-- <br><br><br> -->
+        <br>
+        <br>
+        <br>
+    </div>
+
+</body>
+
+</html>

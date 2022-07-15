@@ -1,0 +1,229 @@
+:root {
+  --color-principal: #04aa6d;
+  --color-segundario: #333;
+  --color-table-header: #04aa6d;
+  --color-table-hover: #333;
+  --color-table-text-h: white;
+}
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+transition: ease-in-out all .3s;
+}
+
+h3 {
+  text-align: center;
+  padding: 10px;
+  font-size: large;
+  background-color: var(--color-segundario);
+  color: white;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.contenedor-tabla{
+  overflow-y: scroll;
+  height: 70vh;
+  width: 100%;
+  margin: auto;
+}
+
+.body{
+  overflow: scroll;
+}
+
+.table-content {
+  border: none;
+  border-collapse: collapse;
+  margin: auto;
+  width: 100%;
+}
+.actividad {
+  text-decoration: none;
+  color: blue;
+  padding: 5px;
+  display: inline-flex;
+  border-radius: 5px;
+}
+img{
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+
+.table-head th {
+  background-color: var(--color-principal);
+  color: var(--color-table-text-h);
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+thead tr th { 
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #ffffff;
+}
+
+
+.table-content tbody .anulado{
+  /* background-color: red; */
+  color: red;
+  font-weight: 700;
+}
+
+.table-content > tbody > tr:nth-child(odd) > td,
+.table-content > tbody > tr:nth-child(odd) > th {
+  background-color: #ffffff;
+}
+.table-content > tbody > tr:nth-child(even) > td,
+.table-content > tbody > tr:nth-child(even) > th {
+  background-color: #f3f3f3;
+}
+
+
+
+.table-content tr td {
+  font-size: 10px;
+  padding: 2px;
+  border-bottom: 1px solid lightgrey;
+  min-width: 60px;
+}
+.table-content tbody tr:hover > td {
+  background-color: var(--color-table-hover);
+  color: white;
+  transition: ease-in-out all 0.1s;
+}
+.table-content tbody th:hover > td {
+  background-color: var(--color-table-hover);
+  color: white;
+  transition: ease-in-out all 0.1s;
+}
+
+
+.funciones {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  box-sizing: border-box;
+  align-content: space-between;
+  height: auto;
+  padding: 2px;
+}
+.opciones {
+  display: block;
+  margin: auto 0;
+}
+.opciones a{
+  padding: 10px;
+  font-size: 12px;
+}
+
+.opciones #add {
+  background-color: var(--color-principal);
+  color: white;
+  text-decoration: none;
+  /* border: 1px solid rgb(162, 199, 199); */
+  border-radius: 5px;
+}
+
+.opciones #busqueda {
+  background-color: #6610f2;
+  color: white;
+  text-decoration: none;
+  /* border: 1px solid rgb(162, 199, 199); */
+  border-radius: 5px;
+}
+
+
+.opciones a:hover{
+  transition: .3s ease-in-out;
+  box-shadow: 0px 0px 4px 2px rgb(106, 111, 111);
+  /* border: none; */
+}
+
+
+.navegacion {
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.navegacion span {
+  font-size: 12px;
+  color: grey;
+  margin-right:90px;
+}
+
+form{
+  display: block;
+  width: 100%;  
+  margin: auto;
+}
+
+.navegacion a {
+  background-color: white;
+  text-decoration: none;
+  padding: 5px;
+  border: 1px solid var(--color-principal);
+  border-radius: 5px;
+  font-size: 12px;
+  color: var(--color-segundario);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.navegacion a:hover {
+  /* border: 1px ; */
+  background-color: var(--color-table-header);
+  color: white;
+  transition: .4s ease-in-out all;
+}
+
+.navegacion input{
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+input:focus{
+  border-color: var(--color-principal);
+  outline: 0 none;
+}
+
+
+.respuesta{
+  padding: 10px;
+  margin: auto;
+  font-size: 15px;
+  text-align: center;
+}
+
+.correcto{
+  color: white;
+  background-color: #00b36efc;
+  border-color: #badbcc;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+.error{
+  color:white;
+  background-color: #e01739;
+  border-color: #f5c2c7;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+.respuesta-flotante{
+  position: fixed;
+  width: 200px;
+  bottom: 6px;
+  border-radius: 5px;
+  right: 5px;
+}

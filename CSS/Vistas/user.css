@@ -1,0 +1,194 @@
+:root {
+  --color-principal: #04aa6d;
+  --color-segundario: #333;
+  --color-table-header: #04aa6d;
+  --color-table-hover: #333;
+  --color-table-text-h: white;
+}
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+
+.filtro {
+  /* display: flex; */
+  width: 600px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.filtro span{
+  background-color: var(--color-segundario);
+  border-radius: 5px 5px 0px 0px;
+  color: white;
+  padding: 5px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.contenedor-usuarios {
+  width: 850px;
+  padding: 10px 5px 30px;
+  border: 1px solid lightgrey;
+  margin: auto;
+  border-radius: 3px;
+}
+
+#tabla-usuarios {
+  box-sizing: border-box;
+  border-collapse: collapse;
+  padding: 10px;
+  margin: auto;
+}
+
+#tabla-usuarios thead tr th {
+  padding: 10px;
+  background-color: var(--color-principal  );
+  /* border-bottom: 1px solid var(--color-segundario); */
+  color: white;
+  font-weight: 400;
+}
+
+#tabla-usuarios tbody tr td {
+  font-size: 13px;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+#tabla-usuarios tbody tr:hover > td {
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+
+#tabla-usuarios tbody tr td a {
+  padding: 4px;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+#aprobar {
+  background-color: green;
+  color: white;
+}
+
+.editar {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.eliminar {
+  background-color: red;
+  color: white;
+}
+
+.contenedor-if {
+  width: 500px;
+  height: 500px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  background-color: white;
+  margin: auto;
+  display: none;
+}
+.contenedor-cerrar {
+  /* background-color: black; */
+  width: 97%;
+  padding: 4px;
+  text-align: right;
+}
+
+.contenedor-cerrar button {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.iframe {
+  height: 100%;
+}
+
+#iframeusuario {
+  width:90%; 
+  height:90%;
+  margin: auto;
+  display: block;
+}
+
+.contenedor{
+  width: 100%;
+}
+.contenedor p {
+  font-size: 12px;
+  color: gray;
+  text-align: center;
+}
+.fila {
+  display: flex;
+  width: 100%;
+}
+
+.columna {
+  padding: 10px;
+  margin: auto;
+  width: 100%;
+}
+
+.columna label {
+  margin-bottom: 5px;
+  color: black;
+  display: inline-block;
+}
+
+.fila input,.fila select {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 4px;
+  padding: 5px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.bt-guardar {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  align-items: center;
+  margin: auto;
+  display: block;
+}
+
+.resultado {
+  width: 390px;
+  /* height: 30px; */
+  font-size: 11px;
+  margin: auto;
+  text-align: center;
+}
+
+.error {
+  background-color: rgb(248, 162, 162);
+  color: darkred;
+  padding: 10px;
+}
+
+.conforme {
+  background-color: rgb(170, 247, 170);
+  color: black;
+  padding: 10px;
+}

@@ -1,0 +1,305 @@
+*{
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    /* background-color: black;
+    color: white; */
+}
+
+#content{
+    width: 900px;
+    height: 100%auto;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    /* background-color: black; */
+}
+
+
+#content .header{
+    /* position: fixed; */
+    width: 100%;
+    height: 90px;
+    background-color: rgb(183, 0, 0);
+}
+
+.icon  {
+    float: left;
+    left: 10px;
+    position: relative  ;
+    /* padding: 10px; */
+    margin-top: 9px;
+    
+}
+
+.title{
+    position: relative;
+    right: 220px;
+    float: right;
+    margin-top: 30px;
+    color: white;
+}
+
+.title h2{
+    font-size: 23px;
+}
+
+/* MULTIUSUARIOS */
+#multiusuario{
+    width: 100%;
+    display: none;
+}
+#multiusuario table{
+    width: 100%;
+    margin: auto;
+    /* background-color: rgb(183, 0, 0); */
+    color: white;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+.mu-long{
+    width: 32%;
+}
+
+#multiusuario table td input{
+    text-align: center;
+    padding: 3px;
+    width: 100%;
+    box-sizing: border-box;
+}
+#multiusuario table td select{
+    text-align: center;
+    padding: 3px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#multiusuario table th{
+    background-color: rgb(183, 0, 0);
+    border: none;
+    padding: 3px;
+}
+#multiusuario .bt-eliminar {
+  width: 20px;
+  height: auto;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  margin-left: 2px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(46, 42, 42);
+}
+#agregar-fila-multiusuario{
+    text-align: right;
+}
+
+#agregar-fila-multiusuario button{
+    width: 80px;
+    background-color:  rgb(183, 0, 0);
+    color: white;
+    padding: 4px;
+    margin: 2px;
+    border-radius:5px;
+}
+
+#agregar-fila-multiusuario button:hover{
+    box-shadow: 1px 1px 3px 2px  rgb(108, 8, 8);
+    transition: .4s;
+}
+
+.comentario{
+    width: 100%;
+}
+
+#tacomentarios{
+    width: 100%;
+}
+
+
+/* Formateo al formulario*/
+tr , th {
+    font-size: 12px;
+}
+
+.contenttable1{
+    position: static;
+    /* border: 1px solid black; */
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+
+.contenttable1 span{
+    /* float: left; */
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.table-info,.table-info th,.table-info td{
+    font-size: 12px;
+    /* width: 80%; */
+    margin-left: 10px;
+    text-align: left; 
+    /* border: 1px solid black; */
+    /* border-collapse: collapse; */
+}
+.table-info tr th{
+    width: 160px;
+    /* height: px; */
+}
+/* 
+.table-info td{
+    height: 25px;
+} */
+.table-info .input-text{
+    /* color: redk */
+    width: 350px;
+    font-size: 12px;
+}
+
+.permisos-areas tr th{
+    text-align: center;
+}
+
+.permisos-areas tr td{
+    text-align: left;
+}
+
+
+
+/* ************************************************** */
+/* CONTENEDOR DE PDT */
+.contenedorinterno-pdt{
+    display: none;
+    height: 150px;
+}
+.contenedorinterno-pdt .table-service{
+    float: left;
+    margin-left:10px;
+    /* margin: 0 auto */
+}
+.table-service{
+    border:1px solid black;
+}
+
+.table-service,.table-service th ,.table-service td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    /* border-spacing: 0px; */
+    
+}
+
+.table-service, .table-service th{
+    align-items: center;
+    width: 30px;
+}
+
+.table-service .f1{
+    background-color: rgb(183, 0, 0);
+    color: white;
+}
+
+.table-service, .table-service td{
+    align-items: center;
+    width: 130px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table-service th input{
+        margin-top: 3px;
+}
+
+
+/* CONTENEDOR RESPONSABLE */
+.contenedor-responsable{
+    font-size: 12px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    /* border: 1px solid black; */
+}
+
+.contenedor-responsable .usuario{
+    width: 60%;
+    height: 80px;
+    font-weight: bold;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    display: flex;
+}
+
+.usuario span{
+    margin: auto;
+}
+
+.contenedor-responsable .usuario input{
+    border: none;
+    display: flex;
+    width: 400px;
+    margin: auto;
+    border-bottom: 1px solid black;
+    
+}
+
+.contenedor-firma{
+    width: 40%;
+    height: 80px;
+    /* border: 1px solid black; */
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    /* position: relative; */
+    display: flex;
+}
+
+#firma-img{
+    width: 230px;
+    height: 80px;
+    display: none;
+    margin: auto;
+    /* position: absolute; */
+
+}
+
+#buscar-firma{
+    /* height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex; */
+    margin: auto;
+}
+
+#guardar{
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(183, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    /* vertical-align: middle   ; */
+}
+
+ #guardar:hover{
+    /* background-color: rgb(108, 8, 8); */
+    box-shadow: 1px 1px 6px 2px  rgb(108, 8, 8);
+    transition: .4s;
+}
+
+@media print{
+    .radio-multiusuario,#guardar,#buscar-firma{
+        display: none;
+    }
+    #btagregar-multiusuario,#agregar,.bt-eliminar{
+        display: none;
+    }
+}
